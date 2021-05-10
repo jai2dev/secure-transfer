@@ -5,8 +5,8 @@
 ## Code Explanation
 
 This implementation can be explained in two parts
+* Main application (Cloud)
 * stand-alone-application
-* web-application
 
 ### stand-alone-application
 
@@ -14,15 +14,15 @@ This implementation can be explained in two parts
 * The file is encrypted using AES algorithm
 * *Menu* option also helps to toggle the menu to upload and download files</br></br>
 
-**src/stand-alone-application/DH.py**:  This file deals with generating keys using diffie-hellman. It generates three keys: Private Key, Public Key, Secret Key (used for encryption and decryption)</br>
-**src/stand-alone-application/ENCDEC.py**: This file is used for encoding and decoding using AES algorithm.</br>
-**src/stand-alone-application/secure.py**: This file acts as a mediator and connect the main program with other code files.</br>
-**src/stand-alone-application/main.py**: This file deals with the GUI. Use this file to generate encoded file and decode the file</br>
+**/stand-alone-application/DH.py**:  This file deals with generating keys using diffie-hellman. It generates three keys: Private Key, Public Key, Secret Key (used for encryption and decryption)</br>
+**/stand-alone-application/ENCDEC.py**: This file is used for encoding and decoding using AES algorithm.</br>
+**/stand-alone-application/secure.py**: This file acts as a mediator and connect the main program with other code files.</br>
+**/stand-alone-application/main.py**: This file deals with the GUI. Use this file to generate encoded file and decode the file</br>
 
 ### web-application
 
 Once file is encrypted it has to be uploaded on an online directory. Another directory is needed where public-key of all the users is stored.</br>
-**src/web-application/app.py** Contains the website in **python-flask** which acts like a directory.
+**/app.py** Contains the website in **python-flask** which acts like a directory.
 
 
 ## you can use any hosting platform as long as you know what you are doing
@@ -39,7 +39,8 @@ Once file is encrypted it has to be uploaded on an online directory. Another dir
 * $yum install python-pip
 * $yum install git
 * $pip install flask
-* $python app.py
+* clone this repo in the instance
+* $python app.py 
 * open the localhost to run the application (for this instance you can open it using instance's ip address)
 
 
