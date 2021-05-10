@@ -17,12 +17,15 @@ This implementation can be explained in two parts
 **src/stand-alone-application/DH.py**:  This file deals with generating keys using diffie-hellman. It generates three keys: Private Key, Public Key, Secret Key (used for encryption and decryption)</br>
 **src/stand-alone-application/ENCDEC.py**: This file is used for encoding and decoding using AES algorithm.</br>
 **src/stand-alone-application/secure.py**: This file acts as a mediator and connect the main program with other code files.</br>
-**src/stand-alone-application/main.py**: This file deals with the GUI.</br>
+**src/stand-alone-application/main.py**: This file deals with the GUI. Use this file to generate encoded file and decode the file</br>
 
 ### web-application
 
 Once file is encrypted it has to be uploaded on an online directory. Another directory is needed where public-key of all the users is stored.</br>
 **src/web-application/app.py** Contains the website in **python-flask** which acts like a directory.
+
+
+## you can use any hosting platform as long as you know what you are doing
 
 ### Hosting on AWS
 
@@ -59,6 +62,3 @@ Once file is encrypted it has to be uploaded on an online directory. Another dir
 * $yum install git
 * $pip install flask
 * $python app.py
-
-
-** you can use any hosting platform as long as you know what you are doing
