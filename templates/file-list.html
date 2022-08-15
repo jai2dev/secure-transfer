@@ -16,7 +16,7 @@
 	{% if msg!=''%}
 		<h3 style="color: red">{{msg}}</h3>
 	{%else%}
-		<h3>File Directory</h3>
+		<h3>Text File Directory</h3>
 		{% for itr in range(length):%}
 			<li><a href="retrieve/file/{{list[itr]}}">{{list[itr]}}</a></li>
 		{% endfor%}
