@@ -27,3 +27,5 @@ The implementation can be explained in two parts
 
 Once file is encrypted it has to be uploaded on an online directory. Another directory is needed where public-key of all the users is stored.</br>
 **/app.py** Contains the website in **python-flask** which acts like a directory.
+
+### Note: For deployement related purpose, check out how to deploy a flask app. All the required files are provided already.
